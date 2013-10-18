@@ -12,7 +12,7 @@ fpath = 'todayevent' # Name of the DB and CSV File
 for f in glob.glob(fpath+'*'):
     os.remove(f) # remove existing files
 
-conn = sqlite3.connect(fpath+'sqlite3'); # open sqlite3
+conn = sqlite3.connect(fpath+'.sqlite3'); # open sqlite3
 csvwriter = csv.writer(open('./'+fpath+'.csv', 'w')) # open csv
 
 c = conn.cursor()
